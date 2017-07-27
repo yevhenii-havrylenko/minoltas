@@ -1,0 +1,16 @@
+*/30    *       *       *       *       www     /usr/local/bin/php /usr/local/www/apache24/data/minoltas/autocheck.php >/dev/null 2>&1
+0       11      22      *       *       www     /usr/local/bin/php /usr/local/www/apache24/data/minoltas/autosend.php >/dev/null 2>&1
+
+
+<Directory "/usr/local/www/apache24/data/minoltas">
+<RequireAll>
+        AuthType Basic
+        AuthName "Please login"
+        AuthUserFile "/usr/local/www/apache24/data/.htpasswd"
+        Require valid-user
+</RequireAll>
+</Directory>
+
+
+printmanager
+minolnam
